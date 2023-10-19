@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, { useState } from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -6,14 +6,11 @@ function App() {
   const addCount = () => {
     setCount(count + 1)
   }
+
   return (
     <>
       <div>{count}</div>
-
-
-      <button onClick={addCount}>
-        add
-      </button>
+      <button onClick={addCount}>add</button>
     </>
   )
 }
